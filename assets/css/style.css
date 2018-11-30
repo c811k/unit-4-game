@@ -2,3 +2,11 @@
     width: 100px;
     height: 100px;
 }
+.jumbotron {
+    font-family: 'Sedgwick Ave', cursive;
+}
+
+.target-score {
+    font-size: 50px;
+
+}

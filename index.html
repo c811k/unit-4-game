@@ -6,18 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Collector Game</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave" rel="stylesheet">
 </head>
 <body>
-    <h1>Number to Guess: <span id="number-to-guess"></span></h1>
-    <div id=crystals>
-        
-        <!-- Added 4 crystal images -->
-        <img class ="crystal-image" src="assets/images/crystal_1.png" alt="crystal_1"/>
-        <img class ="crystal-image" src="assets/images/crystal_2.png" alt="crystal_2"/>
-        <img class ="crystal-image" src="assets/images/crystal_3.png" alt="crystal_3"/>
-        <img class ="crystal-image" src="assets/images/crystal_4.png" alt="crystal_4"/>
-    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4 text-center">Crystal Collector Game</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 mt-2 pt-3 text-center">
+                    <h4>Wins <span id="wins" class="badge badge-secondary">0</span></h4>
+                    <h4>Losses <span id="losses" class="badge badge-secondary">0</span></h4>        
+            </div>
+            <div class="col-md-6 text-center">
+                <h1>Target Score</h1>
+                <h1><span id="number-to-guess" class="badge badge-success target-score"></span></h1>
+            </div>
+            <div class="col-md-3 mt-2 pt-3 text-center">
+                <h3>Your Score</h3>
+                <h1><span id="total-score" class="badge badge-secondary">0</span></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center pt-5">
+                <div id="crystals"></div>
+            </div>
+            
+        </div>
     </div>
+    
 
     <!-- jQuery library -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
